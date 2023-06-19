@@ -1,0 +1,423 @@
+﻿@font-face {
+    font-family: 'Zolina-Bold';
+    src: url('../fonts/Zolina-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Rubik-Light';
+    src: url('../fonts/Rubik-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Zolina-Thin';
+    src: url('../fonts/Zolina-Thin.ttf') format('truetype');
+}
+body {
+    background-size: cover;
+    font-family: Rubik-Light;
+    max-width: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background-image: url('../img/bgn.png');
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navigation Bar */
+#logo {
+    position: absolute;
+    height: 30px;
+    top: 5px;
+    left: 150px;
+}
+
+.navLink {
+    font-size: 18px;
+    font-family: Rubik-Light;
+    color: black;
+    text-decoration: none;
+    display: inline;
+    width: 30px;
+}
+
+.navLink:hover {
+    color: #7227A8;
+}
+
+.navItem {
+    display: inline-block;
+    width: 70px;
+    margin-top: 10px;
+}
+
+#navBar {
+    display: flex;
+    justify-content: center;
+}
+
+.currentPage {
+    text-decoration:underline;
+    font-weight:300;
+}
+
+/*BreadCrumbs*/
+
+nav ol {
+    display: block;
+    position: absolute;
+    top: 55px;
+    left: 110px;
+}
+
+nav ol li::after {
+    content:">";
+}
+
+nav ol li:last-child:after {
+    content: "";
+}
+
+/* Hero Section */
+#heroSection {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+    align-items: start;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+
+#heroSection div {
+    flex-direction:column;
+    margin-right: 150px;
+    left: 150px;
+    position: relative;
+}
+
+
+.headerTitle {
+    font-family: Zolina-Thin;
+    font-size: 75px;
+    display: inline-block;
+    width: 580px;
+    margin-bottom:20px;
+}
+
+.buttons {
+    display: inline-block;
+    width: 100px;
+    padding: 20px 0px;
+}
+
+.imgBtn {
+    width:100px;
+}
+
+.mainParagraph {
+    display: block;
+    width: 400px;
+    line-height: 30px;
+    font-family: Rubik-Light;
+}
+
+.boldTitle {
+    font-family:Zolina-Bold;
+    display:block;
+}
+
+.linkButton {
+    font-size: 15px;
+    font-family: Rubik-Light;
+    color: black;
+    text-decoration: none;
+    display: inline;
+    position: relative;
+    bottom: 20px;
+    margin: 15px;
+}
+
+.headerPic {
+    position:absolute;
+    right:0px;
+}
+
+/*Nails Page Header*/
+#nailsHeaderPic {
+    height: 600px;
+    position: relative;
+    right: 40px;
+}
+
+#nailsPageTitle {
+    line-height:100px;
+}
+
+/*footer*/
+footer {
+    background-color: lightgray;
+    position: absolute;
+    top: 1800px;
+    margin-top: auto;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items:flex-start;
+}
+
+    footer p, footer a {
+        font-family: Rubik-Light;
+    }
+
+    footer div:first-child div {
+        padding: 0px 35px 30px 35px;
+    }
+
+    footer div:first-child div a{
+        padding: 10px 0px;
+        text-align:left;
+    }
+
+    footer div:last-child a {
+        text-align: center;
+        font-family: Rubik-Light;
+        text-decoration: none;
+        color: black;
+        padding-top: 15px;
+    }
+
+    footer > div > a > img {
+        height: 60px;
+        padding: 20px 30px;
+    }
+
+    footer div:last-child {
+        display: flex;
+        flex-direction: column;
+        justify-content: center
+    }
+
+#iconRow {
+    flex-direction: row;
+}
+
+.icon {
+    width: 45px;
+    height: 45px;
+    margin: 20px;
+}
+
+/*Home Page*/
+
+/*Pictures Section*/
+.grayElLipse {
+    width: 300px;
+    height: fit-content;
+}
+
+#shopNow div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 150px;
+}
+
+#shopNowImg {
+    width: 350px;
+    height:fit-content;
+}
+
+#shopNow div div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#shopNow > div > img:nth-child(3) {
+    position: absolute;
+    z-index: 10;
+    width: 130px;
+    left: 555px;
+}
+
+#shopNow div > span {
+    position: absolute;
+    top: 90px;
+    font-family: 'Rubik-Light';
+    line-height: 30px;
+    font-size: 24px;
+    z-index: 10;
+    width: 170px;
+    text-align: center;
+}
+
+/*Text Section*/
+#homeTextSection {
+    background-color: #DBD9D5;
+    position: relative;
+    width: 100%;
+    bottom: 180px;
+    height: 200px;
+}
+
+#homeTextSection p{
+   font-family: Zolina-Thin;
+    font-size: 70px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.purple {
+    font-family:inherit;
+    color: #7227A8;
+}
+
+.breakLine {
+    display: block;
+    font-family: Zolina-Bold;
+}
+
+#makeupBanner {
+    height: 280px;
+    position: relative;
+    bottom: 125px;
+    left: 345px;
+}
+
+#makeupBanner:hover {
+    cursor:pointer;
+}
+
+
+/*Face Page*/
+/*main*/
+#faceMain {
+    width: 100%;
+    position: absolute;
+    top: 750px;
+    display: block;
+}
+
+#circleFlower {
+    position: absolute;
+    left: 1357px;
+    height: 200px;
+}
+
+.sectionTitle {
+    font-family: Zolina-Bold;
+    font-size: 40px;
+    width:fit-content;
+}
+
+.sectionPics {
+    position: absolute;
+    height: 400px;
+}
+
+.sectionParagraph {
+    font-family: Rubik-Light;
+    width: 350px;
+    line-height: 30px;
+}
+
+/*Main - New Collection Section*/
+#newCollectionPic {
+    margin-left: 150px;
+}
+
+#newCollectionText {
+    position: absolute;
+    left: 600px;
+    top: 80px;
+}
+
+#newCollection {
+    margin-bottom: 20px;
+}
+
+/*Main - Hyaluronic Acid Section*/
+
+#hyaluronic {
+    position: relative;
+    top: 500px;
+}
+
+#hyaluronicPic {
+    right: 100px;
+}
+
+#hyaluronicText {
+    position: relative;
+    top: 80px;
+    left:500px;
+}
+
+/*Nails Page*/
+
+/*color gallery section*/
+
+#colorGallery div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin:30px;
+}
+ h2, #names{
+    font-family:Zolina-Thin;
+    font-size:35px;
+    text-align:center;
+    display:block;
+}
+
+/*About Us*/
+
+#names {
+    font-family:Rubik-Light;
+}
+
+#developedParagraph {
+    position:relative;
+    left:150px;
+    margin-top: 50px;
+    text-align: left;
+    font-family:Rubik-Light;
+    font-size:20px;
+    line-height:35px;
+    width:500px;
+}
+
+.flowers {
+    width: 50px;
+}
+
+
+#usPhoto {
+    margin: 30px;
+    left: 210px;
+    position: relative;
+}
+}
+
+/*contact us page*/
+
+label,legend,fieldset,#submit {
+    font-family:Rubik-Light;
+}
+
+/*site map page*/
+
+#pagesList, #contactForm {
+    position:absolute;
+    top:300px;
+    left:150px;
+    font-family:Rubik-Light;
+}
+
+
